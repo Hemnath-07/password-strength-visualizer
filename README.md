@@ -21,7 +21,7 @@ When you type a password, the app:
 ---
 
 ## 🚀 Live Demo
-🔗 **Try it here:** [Password Strength Visualizer Demo](https://hemnath-07.github.io/password-strength-visualizer---use-case-description/)  
+🔗 **Try it here:** [Password Strength Visualizer Demo](https://password-strength-visualizer01.netlify.app/)  
 *(All analysis happens locally — no data leaves your browser.)*
 
 ---
