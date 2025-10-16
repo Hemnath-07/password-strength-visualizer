@@ -2,7 +2,7 @@
 # 🎨 Password Strength Visualizer  
 **Turning Password Security into Art.**  
 
-[![Live Demo](https://img.shields.io/badge/🔗%20Live%20Demo-Click%20Here-brightgreen)](https://hemnath-07.github.io/password-strength-visualizer---use-case-description/)  
+[![Live Demo](https://img.shields.io/badge/🔗%20Live%20Demo-Click%20Here-brightgreen)](https://password-strength-visualizer01.netlify.app/)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
