@@ -64,9 +64,4 @@ When you type a password, the app:
 
 ---
 
-## 🖥️ Local Setup
 
-### 🧩 Clone the repository
-```bash
-git clone https://github.com/Hemnath-07/password-strength-visualizer---use-case-description.git
-cd password-strength-visualizer---use-case-description
