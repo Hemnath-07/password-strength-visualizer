@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Password Strength Visualizer</title>
+
+  <!-- zxcvbn for realistic password scoring -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js" defer></script>
+
+  <!-- p5.js for visuals -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js" defer></script>
+
+  <!-- Main JS (deferred so zxcvbn & p5 are available) -->
+  <script src="script.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" id="app">
+    <header class="header">
+      <h1>Password Strength Visualizer</h1>
+      <p class="tagline">Security education through art — type a password to see its strength as an artwork.</p>
+    </header>
+
+    <section class="controls" aria-labelledby="controls-title">
+      <label for="password" id="controls-title">Enter password</label>
+      <div class="input-row">
+        <input id="password" type="password" placeholder="Type a password..." aria-describedby="strength-text suggestions" />
+        <button id="toggle-visibility" aria-label="Toggle password visibility">Show</button>
+        <button id="copy-btn" aria-label="Copy password">Copy</button>
+      </div>
+
+      <div class="meta">
+        <div class="strength">
+          <div id="strength-bar" class="strength-bar" role="progressbar" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0"></div>
+          <div id="strength-text" class="strength-text">Enter a password</div>
+        </div>
+        <div class="entropy" id="entropy">Entropy: —</div>
+        <div class="cracktime" id="cracktime">Estimated crack time: —</div>
+      </div>
+
+      <div class="suggestions" id="suggestions" aria-live="polite">
+        Suggestions will appear here.
+      </div>
+    </section>
+
+    <section class="visual">
+      <div id="p5-container"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Privacy: password isn't sent anywhere — analysis is done locally in your browser.</small>
+      <a href="#" id="export-btn">Export artwork</a>
+    </footer>
+  </main>
+</body>
+</html>
